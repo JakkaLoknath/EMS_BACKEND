@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {
+	    "https://ems-frontend-snowy-eight.vercel.app",
+	    "http://localhost:5173"
+})
 public class EmployeeController 
 {
 	EmployeeService employeeService;
