@@ -37,6 +37,12 @@ public class EmployeeController
 		this.employeeService = employeeService;
 	}
 	
+	@GetMapping("/health")
+	public String health()
+	{
+		return "ok";
+	}
+	
 	@GetMapping("/getallemployees")
 	public List<Employee> all()
 	{
