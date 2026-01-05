@@ -25,4 +25,4 @@ RUN ./mvnw clean package -DskipTests
 EXPOSE 8080
 
 # Run the Spring Boot application
-CMD ["java","-jar","target/EMS.jar"]
+CMD ["java","-jar","target/EMS-0.0.1-SNAPSHOT.jar"]
